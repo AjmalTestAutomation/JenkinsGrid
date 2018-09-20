@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="remoteurl" value="http://192.168.8.22:55561/wd/hub"/>
+  <test name="Test3(failed)" parallel="tests">
+    <parameter name="remoteurl" value="http://192.168.8.22:55561/wd/hub"/>
+    <classes>
+      <class name="test3.test3.ParallelExec">
+        <methods>
+          <include name="setUp"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- test3.test3.ParallelExec -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

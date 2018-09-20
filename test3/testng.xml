@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests">
+  <test name="Test2">
+
+          <parameter name="remoteurl" value="http://192.168.8.18:5560/wd/hub" />
+    <classes>
+      <class name="test3.test3.ParallelExec">
+         <methods>
+             <include name="f" />
+             <include name="f1" />
+         </methods> 
+          
+       </class>
+    </classes>
+  </test> <!-- Test -->
+ 
+   <test name="Test3">
+          <parameter name="remoteurl" value="http://192.168.8.22:55561/wd/hub" />
+    <classes>
+      <class name="test3.test3.ParallelExec">
+         <methods>
+             <include name="f" />
+             <include name="f1" />
+         </methods> 
+       </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
